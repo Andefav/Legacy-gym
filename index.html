@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGACY ATHLETICS | Elite Strength & Performance Facility</title>
+  <meta name="description" content="Build Your Legacy at our world-class gym. Olympic-grade equipment, beginner-friendly guided routines, 24/7 biometric access, and a dark luxury fitness aesthetic.">
+  
+  <!-- Google Fonts: Syne (Display) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP BAR / PERSISTENT BRAND HEADER (Transitions on scroll past Hero)
+       ========================================================================== -->
+  <header class="top-header" id="topHeader">
+    <a href="#home" class="logo" aria-label="Legacy Athletics Home">
+      <div class="logo-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 5v14M18 5v14M2 12h20M6 12H2M22 12h-4"></path>
+        </svg>
+      </div>
+      <div class="logo-text">LEGACY<span>FORGE</span></div>
+    </a>
+
+    <!-- Secondary Sticky Nav (becomes active when user scrolls away from centered hero nav) -->
+    <nav class="sticky-nav-links" aria-label="Persistent Navigation">
+      <a href="#home">Home</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#routines">Beginner Routines</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#register">Register</a>
+    </nav>
+
+    <div class="top-header-actions">
+      <div class="live-badge" title="Facility Status">
+        <span class="pulse-dot"></span>
+        <span>24/7 OPEN</span>
+      </div>
+      <a href="#register" class="btn-header-join">Claim Pass</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION WITH CENTERED NAVIGATION BAR
+       ========================================================================== -->
+  <header id="home" class="hero-section">
+    <!-- Looping Workout Video & Overlay Scoped Strictly Inside Hero Section -->
+    <div class="video-bg-container" aria-hidden="true">
+      <video id="bgVideo" class="video-bg" autoplay muted loop playsinline poster="assets/poster.jpg">
+        <source src="assets/workout-bg.webm" type="video/webm">
+        <!-- Fallback image automatically shown if video is unsupported or reduced-motion is active -->
+      </video>
+    </div>
+    <div class="video-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      
+      <!-- Pre-Title Eyebrow Tag -->
+      <div class="hero-tagline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        <span>The Gold Standard in Human Performance</span>
+      </div>
+
+      <!-- Hero Headline (User Requested: 'Build Your Legacy') -->
+      <h1 class="hero-headline">
+        BUILD YOUR <span class="text-gradient">LEGACY</span>
+      </h1>
+
+      <p class="hero-description">
+        Forge unshakeable physical strength inside a 25,000 sq ft cathedral of iron. 
+        Engineered with world-class biomechanics, Olympic-certified steel, and guided routines for every fitness level.
+      </p>
+
+      <!-- ======================================================================
+           CENTERED NAVIGATION BAR (User Requested: Centered horizontally & vertically)
+           ====================================================================== -->
+      <div class="hero-nav-wrapper">
+        <nav class="hero-nav" aria-label="Hero Centered Navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#routines">Beginner Routines</a>
+          <a href="#memberships">Memberships</a>
+          <a href="#register" class="nav-highlight">Register</a>
+        </nav>
+      </div>
+
+      <!-- Hero Action CTAs (Integrated right below centered nav) -->
+      <div class="hero-ctas">
+        <a href="#register" class="btn-primary">
+          <span>Join Now</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#routines" class="btn-secondary">
+          <span>Explore Programs</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Quick Facility Metric Ticker -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">25K<span>+</span></div>
+          <div class="stat-label">Sq Ft Arena</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">150<span>+</span></div>
+          <div class="stat-label">Pro Machines</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24<span>/7</span></div>
+          <div class="stat-label">Biometric Entry</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">100<span>%</span></div>
+          <div class="stat-label">Zero Judgment</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#equipment" class="scroll-indicator" aria-label="Scroll down to equipment">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Explore Arsenal</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         DEDICATED EQUIPMENT SHOWCASE SECTION (Right Below Hero)
+         ========================================================================== -->
+    <section id="equipment" aria-labelledby="equipmentTitle">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-badge">World-Class Arsenal</span>
+          <h2 class="section-title" id="equipmentTitle">Engineered For Supreme Performance</h2>
+          <p class="section-subtitle">
+            Every millimeter of Legacy Forge is fitted with elite commercial biomechanics. 
+            From precision calibrated iron to curved endurance ergometers, our equipment guarantees maximal muscle stimulation and joint safety.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="equipment-filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Equipment</button>
+          <button class="filter-btn" data-filter="freeweights" role="tab" aria-selected="false">Free Weights</button>
+          <button class="filter-btn" data-filter="cardio" role="tab" aria-selected="false">Cardio & Slat-Belts</button>
+          <button class="filter-btn" data-filter="cables" role="tab" aria-selected="false">Cable & Strength</button>
+          <button class="filter-btn" data-filter="turf" role="tab" aria-selected="false">Turf & Functional</button>
+          <button class="filter-btn" data-filter="recovery" role="tab" aria-selected="false">Thermal Recovery</button>
+        </div>
+
+        <!-- Equipment Grid Showcase -->
+        <div class="equipment-grid">
+
+          <!-- Card 1: Free Weights -->
+          <article class="equipment-card" data-category="freeweights">
+            <div class="equipment-media">
+              <img src="assets/equipment-freeweights.jpg" alt="Pro-grade Urethane Dumbbells and Barbells" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">Eleiko & Rogue</span>
+              <span class="equipment-badge-brand">Competition</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">Pro-Grade Free Weights & Dumbbells</h3>
+              <p class="equipment-desc">
+                Heavy-duty urethane dumbbells spanning 5 lbs up to 150 lbs in 2.5 lb increments, paired with calibrated cast iron plates and Swedish Eleiko competition bars for zero wobble and true grip.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Weight Range:</span>
+                  <span class="spec-value">5 - 150 lbs (Paired)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Barbell Specs:</span>
+                  <span class="spec-value">29mm Aggressive Knurl</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Weight Precision:</span>
+                  <span class="spec-value">Calibrated ±10g</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Treadmills & Cardio -->
+          <article class="equipment-card" data-category="cardio">
+            <div class="equipment-media">
+              <img src="assets/equipment-cardio.jpg" alt="State of the art Woodway treadmills and cardio equipment" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">Woodway & Concept2</span>
+              <span class="equipment-badge-brand">Telemetry</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">State-of-the-Art Treadmills & Cardio</h3>
+              <p class="equipment-desc">
+                Curved non-motorized Woodway slat-belt treadmills, Concept2 SkiErgs, and StairMaster 8-Series HIIT climbers featuring continuous heart-rate telemetry and zero-impact shock absorption.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Belt Technology:</span>
+                  <span class="spec-value">Vulcanized Rubber Slats</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Metabolic Burn:</span>
+                  <span class="spec-value">Up to 30% More Caloric Output</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Connectivity:</span>
+                  <span class="spec-value">Apple Watch & ANT+ Sync</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Cable & Resistance Stations -->
+          <article class="equipment-card" data-category="cables">
+            <div class="equipment-media">
+              <img src="assets/equipment-cables.jpg" alt="Cable and resistance strength stations" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">Hammer Strength</span>
+              <span class="equipment-badge-brand">Biomechanics</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">Cable & Resistance Strength Stations</h3>
+              <p class="equipment-desc">
+                ISO-lateral plate loaded machines that mirror the body’s natural converging and diverging arcs, accompanied by 8-stack dual adjustable pulley systems for isolated continuous tension.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Stack System:</span>
+                  <span class="spec-value">Dual 250 lb Aircraft Cables</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Movement Plane:</span>
+                  <span class="spec-value">Independent Divergent Arcs</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Resistance:</span>
+                  <span class="spec-value">Smooth Fluid Inertia</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Functional Training Turf -->
+          <article class="equipment-card" data-category="turf">
+            <div class="equipment-media">
+              <img src="assets/equipment-turf.jpg" alt="Functional Training Turf and Rogue Monster Rig" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">Rogue Monster</span>
+              <span class="equipment-badge-brand">Athletic</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">Functional Training Turf & Rig</h3>
+              <p class="equipment-desc">
+                A 40-yard indoor sprint track alongside custom Rogue Monster power rigs, magnetic resistance tank sleds, soft-plyo boxes, and Russian kettlebells for athletic conditioning.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Turf Length:</span>
+                  <span class="spec-value">40 Yards High-Density Fiber</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Rig Modular:</span>
+                  <span class="spec-value">3x3" 11-Gauge American Steel</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Sled Arsenal:</span>
+                  <span class="spec-value">Torque M1 Multi-Surface Tanks</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Olympic Lifting Platforms -->
+          <article class="equipment-card" data-category="freeweights">
+            <div class="equipment-media">
+              <img src="assets/equipment-olympic.jpg" alt="Olympic Weightlifting Platforms with bumper plates" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">IWF Certified</span>
+              <span class="equipment-badge-brand">Heavy Lifting</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">Olympic Weightlifting Platforms</h3>
+              <p class="equipment-desc">
+                Dedicated sound-dampening oak and high-density acoustic rubber drop zones equipped with certified competition bumper plates, chalk boxes, and precision needle-bearing bars.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Deck Material:</span>
+                  <span class="spec-value">Triple-Layered Canadian Maple</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Drop Rubber:</span>
+                  <span class="spec-value">60mm Acoustic Dampening</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Bar Rotations:</span>
+                  <span class="spec-value">10 Precision Needle Bearings</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Recovery & Cryo Lounge -->
+          <article class="equipment-card" data-category="recovery">
+            <div class="equipment-media">
+              <img src="assets/equipment-recovery.jpg" alt="Thermal infrared sauna and recovery lounge" loading="lazy">
+              <div class="equipment-media-overlay"></div>
+              <span class="equipment-tag">Bio-Recovery</span>
+              <span class="equipment-badge-brand">Longevity</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-title">Biometric Recovery & Thermal Spa</h3>
+              <p class="equipment-desc">
+                Accelerate central nervous system recovery between sessions with medical-grade infrared saunas, 38°F cold plunge filtration pools, and Normatec 3 pneumatic compression boots.
+              </p>
+              <div class="equipment-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Sauna Tech:</span>
+                  <span class="spec-value">Full Spectrum Far-Infrared</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Cold Immersion:</span>
+                  <span class="spec-value">38°F Continuous Ozone Purified</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Compression:</span>
+                  <span class="spec-value">Normatec Dynamic Lymphatic</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BEGINNER WORKOUT ROUTINES SECTION (#routines)
+         ========================================================================== -->
+    <section id="routines" aria-labelledby="routinesTitle">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-badge">No Prior Experience Required</span>
+          <h2 class="section-title" id="routinesTitle">Beginner Workout Routines</h2>
+          <p class="section-subtitle">
+            No prior gym experience is required to start — everyone in this facility was a beginner on day one. 
+            We’ve designed these zero-intimidation, step-by-step routines to help you feel completely comfortable, confident, and injury-free from the moment you step through our doors.
+          </p>
+        </div>
+
+        <!-- ======================================================================
+             EQUIPMENT SAFETY FUNDAMENTALS FOR ABSOLUTE BEGINNERS
+             ====================================================================== -->
+        <div class="beginner-orientation-banner">
+          <div class="orientation-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <div>
+              <h3>First Time in a Gym? 4 Golden Equipment Safety Rules</h3>
+              <p>Review these quick tips before picking up a weight or stepping on a machine.</p>
+            </div>
+          </div>
+
+          <div class="orientation-points-grid">
+            <div class="orientation-point">
+              <span class="point-number">Rule 01</span>
+              <h4 class="point-title">Spot the Yellow Adjustment Pins</h4>
+              <p class="point-desc">
+                Every machine has bright yellow or red knobs. Pull them to adjust the seat height so the machine's pivot bolt lines up with your knee or elbow joints. Listen for the "click" into place.
+              </p>
+            </div>
+
+            <div class="orientation-point">
+              <span class="point-number">Rule 02</span>
+              <h4 class="point-title">The Magnetic Stack Pin</h4>
+              <p class="point-desc">
+                On selectorized cable machines, always ensure the weight pin is inserted 100% horizontally and flush into the plate. Never leave it dangling halfway out.
+              </p>
+            </div>
+
+            <div class="orientation-point">
+              <span class="point-number">Rule 03</span>
+              <h4 class="point-title">Control the 3-Second Return</h4>
+              <p class="point-desc">
+                Never let the weight plates slam together at the bottom of a repetition. Lower the weight smoothly over 3 seconds; this protects your joints and builds stronger muscles faster.
+              </p>
+            </div>
+
+            <div class="orientation-point">
+              <span class="point-number">Rule 04</span>
+              <h4 class="point-title">Cardio Emergency Safety Clip</h4>
+              <p class="point-desc">
+                Before hitting "Quick Start" on any treadmill, attach the red safety clip to your shirt or waistline. If you stumble or slip, the safety cord automatically halts the belt immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================================
+             INTERACTIVE ROUTINE CARDS / TABS
+             ====================================================================== -->
+        <div class="routine-tabs" role="tablist">
+          <button class="routine-tab-btn active" data-target="routine-fullbody" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <span>Full Body Foundation</span>
+          </button>
+          
+          <button class="routine-tab-btn" data-target="routine-cardio-core" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Introduction to Cardio & Core</span>
+          </button>
+          
+          <button class="routine-tab-btn" data-target="routine-machine-circuit" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+            <span>Basic Machine Circuit</span>
+          </button>
+        </div>
+
+        <!-- ======================================================================
+             ROUTINE PANE 1: FULL BODY FOUNDATION
+             ====================================================================== -->
+        <div id="routine-fullbody" class="routine-pane active" role="tabpanel">
+          
+          <div class="routine-overview-banner">
+            <div class="routine-overview-text">
+              <h3>Full Body Foundation Plan</h3>
+              <p>Designed for absolute beginners to master fundamental human movement patterns (Squat, Push, Pull, Hinge) using stable support and light free weights.</p>
+            </div>
+            <div class="routine-meta-pills">
+              <div class="routine-meta-pill">Recommended: <span>3 Days / Week (e.g. Mon / Wed / Fri)</span></div>
+              <div class="routine-meta-pill">Session Duration: <span>40 - 45 Min</span></div>
+              <div class="routine-meta-pill">Rest Between Days: <span>1 Full Day Off</span></div>
+            </div>
+          </div>
+
+          <!-- Step Sequence Breakdown -->
+          <div class="routine-steps-summary">
+            <div class="steps-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+              <span>Simple Workout Sequence:</span>
+            </div>
+            <div class="steps-list">
+              <span class="step-chip"><strong class="step-num">Step 1:</strong> 5-Min Warmup Walk</span>
+              <span class="step-chip"><strong class="step-num">Step 2:</strong> 4 Main Foundational Exercises</span>
+              <span class="step-chip"><strong class="step-num">Step 3:</strong> 5-Min Gentle Cool Down</span>
+            </div>
+          </div>
+
+          <!-- Exercises Grid -->
+          <div class="exercises-grid">
+            
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Bench-Supported Bodyweight Squats</h4>
+                  <span class="exercise-target">Quads, Glutes & Hip Stability</span>
+                </div>
+                <span class="exercise-number">Step 2A</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">8 - 10 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 - 90 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Stand 6 inches in front of an exercise bench. Hinge hips back until your glutes gently tap the bench, then stand tall. Eliminates any fear of falling.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Incline Dumbbell Bench Press</h4>
+                  <span class="exercise-target">Chest, Front Delts & Triceps</span>
+                </div>
+                <span class="exercise-number">Step 2B</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Set bench to a comfortable 30-degree incline. The incline position is much friendlier on newcomer rotator cuffs than flat pressing.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Seated Cable Lat Row (Neutral Grip)</h4>
+                  <span class="exercise-target">Upper Back & Postural Muscles</span>
+                </div>
+                <span class="exercise-number">Step 2C</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 - 12 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Sit with knees slightly bent. Pull the triangular handle towards your lower belly while puffing your chest forward. Never slouch forward.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Standing Dumbbell Farmer's Carry</h4>
+                  <span class="exercise-target">Core Bracing, Grip & Balance</span>
+                </div>
+                <span class="exercise-number">Step 2D</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Walks</span></div>
+                <div class="metric-col"><span class="metric-name">Distance</span><span class="metric-val">20 - 30 Yards</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Hold a light dumbbell in each hand. Stand tall with your shoulders back and walk smoothly. One of the safest and most functional core exercises known.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Equipment Safety Advice Box for this Routine -->
+          <div class="equipment-safety-callout">
+            <div class="safety-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="safety-text">
+              <h4>Beginner Equipment Safety Tip: Picking Up & Racking Dumbbells</h4>
+              <p>
+                When taking dumbbells off the rack, always stand directly in front of the weight, bend at your knees (not your lower back), and grasp the handles securely before stepping back. When finished, walk the weights back to the rack under full control — never drop dumbbells onto the rubber floor.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ======================================================================
+             ROUTINE PANE 2: INTRODUCTION TO CARDIO & CORE
+             ====================================================================== -->
+        <div id="routine-cardio-core" class="routine-pane" role="tabpanel">
+          
+          <div class="routine-overview-banner">
+            <div class="routine-overview-text">
+              <h3>Introduction to Cardio & Core</h3>
+              <p>A gentle, low-impact routine designed to safely build cardiovascular stamina, joint lubrication, and core posture without any aggressive running or spine twisting.</p>
+            </div>
+            <div class="routine-meta-pills">
+              <div class="routine-meta-pill">Recommended: <span>2 to 3 Days / Week (e.g. Tue / Thu / Sat)</span></div>
+              <div class="routine-meta-pill">Session Duration: <span>35 Min Total</span></div>
+              <div class="routine-meta-pill">Intensity: <span>Comfortable / Conversational Pace</span></div>
+            </div>
+          </div>
+
+          <!-- Step Sequence Breakdown -->
+          <div class="routine-steps-summary">
+            <div class="steps-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+              <span>Simple Workout Sequence:</span>
+            </div>
+            <div class="steps-list">
+              <span class="step-chip"><strong class="step-num">Step 1:</strong> 15-Min Incline Walking</span>
+              <span class="step-chip"><strong class="step-num">Step 2:</strong> 10-Min Low-Impact Recumbent Cycle</span>
+              <span class="step-chip"><strong class="step-num">Step 3:</strong> 10-Min Spine-Safe Mat Core</span>
+            </div>
+          </div>
+
+          <!-- Exercises Grid -->
+          <div class="exercises-grid">
+            
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Incline Treadmill Striding</h4>
+                  <span class="exercise-target">Aerobic Capacity, Calves & Glutes</span>
+                </div>
+                <span class="exercise-number">Step 1</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Duration</span><span class="metric-val">15 Minutes</span></div>
+                <div class="metric-col"><span class="metric-name">Speed</span><span class="metric-val">2.8 - 3.2 mph</span></div>
+                <div class="metric-col"><span class="metric-name">Incline</span><span class="metric-val">3% - 5% Grade</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Walking on a mild incline delivers the metabolic burn of jogging with virtually zero joint impact on your knees or ankles. Keep your posture upright without leaning on the handrails.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Recumbent Seated Stationary Bike</h4>
+                  <span class="exercise-target">Low-Impact Cardio & Knee Mobility</span>
+                </div>
+                <span class="exercise-number">Step 2</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Duration</span><span class="metric-val">10 Minutes</span></div>
+                <div class="metric-col"><span class="metric-name">Cadence</span><span class="metric-val">65 - 75 RPM</span></div>
+                <div class="metric-col"><span class="metric-name">Resistance</span><span class="metric-val">Level 3 - 5</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>The recumbent bike features a supportive bucket seat that takes all stress off your lower spine. Adjust the seat distance so your knee has a slight bend when the pedal is farthest away.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Glute Bridge Mat Activation</h4>
+                  <span class="exercise-target">Glute Activation & Lower Back Health</span>
+                </div>
+                <span class="exercise-number">Step 3A</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 - 12 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Hold</span><span class="metric-val">2s at Top</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Lie on a mat with knees bent. Drive through your heels to raise your hips until knees, hips, and shoulders form a straight line. Squeeze glutes for 2 seconds.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Deadbug Core Stabilizer</h4>
+                  <span class="exercise-target">Deep Abdominal Wall & Spine Stability</span>
+                </div>
+                <span class="exercise-number">Step 3B</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">6 - 8 per Side</span></div>
+                <div class="metric-col"><span class="metric-name">Tempo</span><span class="metric-val">Slow & Controlled</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Keep your lower back pressed flat into the mat. Extend opposite arm and leg slowly while exhaling. This trains core stability without risking neck or spine crunches.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Equipment Safety Advice Box for this Routine -->
+          <div class="equipment-safety-callout">
+            <div class="safety-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="safety-text">
+              <h4>Beginner Equipment Safety Tip: Safe Treadmill Boarding & Dismounting</h4>
+              <p>
+                Never step directly onto a moving treadmill belt. When starting, stand with feet on the wide plastic side rails, clip the emergency safety lanyard to your clothes, select your speed, and step on only once the belt begins rolling smoothly. Use the big red "STOP" button to finish.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ======================================================================
+             ROUTINE PANE 3: BASIC MACHINE CIRCUIT
+             ====================================================================== -->
+        <div id="routine-machine-circuit" class="routine-pane" role="tabpanel">
+          
+          <div class="routine-overview-banner">
+            <div class="routine-overview-text">
+              <h3>Basic Machine Circuit Plan</h3>
+              <p>The safest way to begin resistance training. Selectorized pin machines have fixed, guided movement tracks so weights cannot drop on you or wobble out of balance.</p>
+            </div>
+            <div class="routine-meta-pills">
+              <div class="routine-meta-pill">Recommended: <span>2 to 3 Days / Week (e.g. Mon & Thu)</span></div>
+              <div class="routine-meta-pill">Session Duration: <span>35 - 40 Min</span></div>
+              <div class="routine-meta-pill">Safety Level: <span>Maximum Built-In Safety Stops</span></div>
+            </div>
+          </div>
+
+          <!-- Step Sequence Breakdown -->
+          <div class="routine-steps-summary">
+            <div class="steps-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+              <span>Simple Workout Sequence:</span>
+            </div>
+            <div class="steps-list">
+              <span class="step-chip"><strong class="step-num">Step 1:</strong> Seat & Pin Setup</span>
+              <span class="step-chip"><strong class="step-num">Step 2:</strong> Upper Body Push & Pull Machines</span>
+              <span class="step-chip"><strong class="step-num">Step 3:</strong> Lower Body Press & Curl Machines</span>
+              <span class="step-chip"><strong class="step-num">Step 4:</strong> Equipment Wipe-Down</span>
+            </div>
+          </div>
+
+          <!-- Exercises Grid -->
+          <div class="exercises-grid">
+            
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Seated Machine Chest Press</h4>
+                  <span class="exercise-target">Chest, Shoulders & Triceps</span>
+                </div>
+                <span class="exercise-number">Machine 01</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 - 12 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Adjust the seat so the handles align directly with the middle of your chest. Push forward smoothly until your arms are straight without hyperextending elbows.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Lat Pulldown Machine (Thigh-Locked)</h4>
+                  <span class="exercise-target">Upper Back, Lats & Biceps</span>
+                </div>
+                <span class="exercise-number">Machine 02</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Lower the circular thigh pads so they hold your knees snugly in place. Grip the wide bar, lean back slightly (5-10°), and pull the bar gently to collarbone height.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Seated Cable Leg Press Machine</h4>
+                  <span class="exercise-target">Quads, Glutes & Hamstrings</span>
+                </div>
+                <span class="exercise-number">Machine 03</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 - 12 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">75 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Place feet flat and hip-width on the footplate. Push back smoothly. Crucial beginner rule: Never snap or lock your knees completely straight at the top.</span>
+              </div>
+            </div>
+
+            <div class="exercise-card">
+              <div class="exercise-top">
+                <div>
+                  <h4 class="exercise-title">Seated Machine Leg Curl</h4>
+                  <span class="exercise-target">Hamstrings & Knee Joint Protection</span>
+                </div>
+                <span class="exercise-number">Machine 04</span>
+              </div>
+              <div class="exercise-metrics">
+                <div class="metric-col"><span class="metric-name">Sets</span><span class="metric-val">3 Sets</span></div>
+                <div class="metric-col"><span class="metric-name">Reps</span><span class="metric-val">10 - 12 Reps</span></div>
+                <div class="metric-col"><span class="metric-name">Rest</span><span class="metric-val">60 Sec</span></div>
+              </div>
+              <div class="exercise-tip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Align the side pivot bolt of the machine directly with your knee joint. Set the ankle pad to rest just above your Achilles tendon, then curl smoothly down.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Equipment Safety Advice Box for this Routine -->
+          <div class="equipment-safety-callout">
+            <div class="safety-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="safety-text">
+              <h4>Beginner Equipment Safety Tip: The Joint Alignment & Pin Rule</h4>
+              <p>
+                Every single machine at Legacy Forge has a visual diagram placard on the frame. Check the diagram before sitting down. Always verify that your joints match the red/yellow rotational indicator on the machine axis, and select a starting weight that allows 12 smooth, non-straining repetitions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MEMBERSHIPS SECTION (#memberships)
+         ========================================================================== -->
+    <section id="memberships" aria-labelledby="membershipsTitle">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-badge">No Long-Term Traps</span>
+          <h2 class="section-title" id="membershipsTitle">Transparent Membership Tiers</h2>
+          <p class="section-subtitle">
+            Zero hidden fees, zero cancellation penalties. Choose the access tier that fits your personal standard of excellence.
+          </p>
+        </div>
+
+        <!-- Monthly / Annual Toggle Switch -->
+        <div class="pricing-toggle-wrap">
+          <span id="labelMonthly" class="pricing-label active">Monthly Billing</span>
+          <label class="switch-control" for="billingSwitch">
+            <input type="checkbox" id="billingSwitch" aria-label="Toggle annual billing discount">
+            <span class="switch-slider"></span>
+          </label>
+          <span id="labelAnnual" class="pricing-label">Annual Billing</span>
+          <span class="save-pill">Save 20%</span>
+        </div>
+
+        <!-- Pricing Cards Grid: Starter, Pro (Most Popular), Elite -->
+        <div class="pricing-grid">
+
+          <!-- Plan 1: Starter -->
+          <article class="pricing-card">
+            <h3 class="pricing-tier-name">Starter</h3>
+            <p class="pricing-tier-desc">Essential 24/7 access to our heavy weights, turf, and cardio arena.</p>
+            
+            <div class="price-box">
+              <span class="currency">$</span>
+              <span class="amount" id="priceStarter">49</span>
+              <span class="billing-cycle" id="cycleStarter">/ month</span>
+            </div>
+
+            <ul class="features-list">
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>24/7 Biometric Keyless Entry</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Free Weights & Cardio Arena</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Locker Rooms & Rain Showers</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Legacy Companion Training App</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn-select-tier" data-tier="starter">Join Starter</button>
+          </article>
+
+          <!-- Plan 2: Pro (Highlighted as Most Popular) -->
+          <article class="pricing-card featured">
+            <span class="card-badge-popular">Most Popular</span>
+            <h3 class="pricing-tier-name">Pro</h3>
+            <p class="pricing-tier-desc">Our most popular tier for dedicated progress, recovery, and peak fitness.</p>
+            
+            <div class="price-box">
+              <span class="currency">$</span>
+              <span class="amount" id="pricePro">89</span>
+              <span class="billing-cycle" id="cyclePro">/ month</span>
+            </div>
+
+            <ul class="features-list">
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Everything in Starter Included</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Infrared Sauna & Recovery Lounge</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>1 Free Guest Pass Every Day</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Monthly InBody 770 Composition Scan</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Priority Access to Master Clinics</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn-select-tier" data-tier="pro">Join Pro</button>
+          </article>
+
+          <!-- Plan 3: Elite -->
+          <article class="pricing-card">
+            <h3 class="pricing-tier-name">Elite</h3>
+            <p class="pricing-tier-desc">White-glove training experience with personal coaching and cryo lounge.</p>
+            
+            <div class="price-box">
+              <span class="currency">$</span>
+              <span class="amount" id="priceElite">149</span>
+              <span class="billing-cycle" id="cycleElite">/ month</span>
+            </div>
+
+            <ul class="features-list">
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Everything in Pro Included</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>2x Monthly 1-on-1 Master Coach Sessions</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unlimited Cold Plunge & Cryo Lounge</span>
+              </li>
+              <li class="feature-item highlighted">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated Locker & Daily Towel Laundry</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn-select-tier" data-tier="elite">Join Elite</button>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         REGISTRATION & PASS ACTIVATION SECTION (#register)
+         ========================================================================== -->
+    <section id="register" aria-labelledby="registerTitle">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-badge">Instant Activation</span>
+          <h2 class="section-title" id="registerTitle">Start Your Transformation</h2>
+          <p class="section-subtitle">
+            Complete your registration in under 60 seconds. Receive your digital NFC access key immediately to your phone.
+          </p>
+        </div>
+
+        <div class="register-layout">
+          
+          <!-- Registration Form -->
+          <div class="register-card">
+            <form id="registrationForm" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Full Name</label>
+                  <input type="text" id="fullName" class="form-input" placeholder="e.g. Marcus Vance" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input type="email" id="email" class="form-input" placeholder="marcus@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input type="tel" id="phone" class="form-input" placeholder="(555) 234-5678" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="planSelect">Chosen Membership</label>
+                  <select id="planSelect" class="form-select">
+                    <option value="starter">Starter Plan ($49/mo)</option>
+                    <option value="pro" selected>Pro Plan ($89/mo - Most Popular)</option>
+                    <option value="elite">Elite Plan ($149/mo - Ultimate)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Primary Goal Selector -->
+              <div class="form-group">
+                <label class="form-label">Primary Fitness Goal</label>
+                <div class="goal-pills">
+                  <label class="goal-option">
+                    <input type="radio" name="goal" value="muscle" checked>
+                    <span class="goal-box">Build Lean Muscle</span>
+                  </label>
+                  <label class="goal-option">
+                    <input type="radio" name="goal" value="strength">
+                    <span class="goal-box">Maximum Strength & Power</span>
+                  </label>
+                  <label class="goal-option">
+                    <input type="radio" name="goal" value="fatloss">
+                    <span class="goal-box">Fat Loss & Conditioning</span>
+                  </label>
+                  <label class="goal-option">
+                    <input type="radio" name="goal" value="longevity">
+                    <span class="goal-box">General Health & Longevity</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">
+                <span>Activate Membership Now</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Live Membership Summary Card -->
+          <aside class="summary-card" aria-label="Membership Overview">
+            <div class="summary-header">
+              <h3 class="summary-title">Membership Overview</h3>
+              <div class="summary-plan-badge" id="summaryPlanBadge">Pro Pass (Most Popular)</div>
+            </div>
+
+            <div class="summary-line">
+              <span>Initiation / Sign-up Fee:</span>
+              <span style="color: #22c55e; font-weight: 700;">$0 (WAIVED TODAY)</span>
+            </div>
+            
+            <div class="summary-line">
+              <span>Digital Keycard App:</span>
+              <span style="color: #22c55e; font-weight: 700;">INCLUDED</span>
+            </div>
+
+            <div class="summary-line">
+              <span>Monthly Rate:</span>
+              <span id="summaryPriceLine" style="font-weight: 700; color: #fff;">$89/mo</span>
+            </div>
+
+            <div class="summary-line total">
+              <span>Total Due Today:</span>
+              <span id="summaryTotal">$89/mo</span>
+            </div>
+
+            <h4 style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 1.5rem;">Included Benefits:</h4>
+            <ul class="summary-perks" id="summaryPerksList">
+              <!-- Dynamically populated via main.js -->
+            </ul>
+
+            <div style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.5; margin-top: 1.5rem; text-align: center;">
+              🔒 256-bit encrypted checkout. Cancel anytime with 1-click in the member portal.
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       VIDEO ACCESSIBILITY CONTROL BUTTON (Bottom-Right Floating)
+       ========================================================================== -->
+  <button id="videoToggleBtn" class="video-control-btn" aria-label="Pause background video" title="Pause video">
+    <!-- Play Icon -->
+    <svg id="iconPlay" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+    </svg>
+    <!-- Pause Icon -->
+    <svg id="iconPause" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="4" width="4" height="16"></rect>
+      <rect x="14" y="4" width="4" height="16"></rect>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       INTERACTIVE REGISTRATION MODAL (Opens on Any Sign-Up Button Click)
+       ========================================================================== -->
+  <div id="registrationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button id="closeModalBtn" class="modal-close-btn" aria-label="Close registration dialog" title="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- VIEW 1: REGISTRATION FORM VIEW -->
+      <div id="modalFormView" class="modal-form-view">
+        <div class="modal-header">
+          <span class="modal-eyebrow">Instant 24/7 Digital Access</span>
+          <h3 class="modal-title" id="modalTitle">Join Legacy Forge</h3>
+          <p class="modal-subtitle">
+            Enter your details below to activate your digital access key and secure your membership rate today.
+          </p>
+        </div>
+
+        <form id="modalRegistrationForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="modalFullName">Full Name</label>
+            <input type="text" id="modalFullName" class="form-input" placeholder="e.g. Marcus Vance" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="modalEmail">Email Address</label>
+              <input type="email" id="modalEmail" class="form-input" placeholder="marcus@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="modalPhone">Phone Number</label>
+              <input type="tel" id="modalPhone" class="form-input" placeholder="(555) 234-5678" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modalPlanSelect">Selected Membership Tier</label>
+            <select id="modalPlanSelect" class="form-select">
+              <option value="starter">Starter Plan ($49/mo)</option>
+              <option value="pro" selected>Pro Plan ($89/mo - Most Popular)</option>
+              <option value="elite">Elite Plan ($149/mo - Ultimate)</option>
+            </select>
+          </div>
+
+          <!-- Live Modal Plan Preview Box -->
+          <div class="modal-plan-preview-box">
+            <div class="preview-plan-info">
+              <span class="preview-plan-name" id="modalPreviewName">Pro Plan (Most Popular)</span>
+              <span class="preview-plan-perk" id="modalPreviewPerk">✓ Full Arena + Recovery Spa + Daily Guest Pass</span>
+            </div>
+            <div class="preview-plan-price" id="modalPreviewPrice">$89<span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-body);">/mo</span></div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem;">
+            <span>Complete Registration & Claim Key</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- VIEW 2: SUBMISSION FEEDBACK VIEW -->
+      <div id="modalSuccessView" class="modal-feedback-content">
+        <div class="success-check-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <h3 class="modal-title" style="font-size: 1.7rem;">Welcome to the Legacy</h3>
+        <p class="modal-subtitle">
+          Your membership has been processed and your biometric access key is live.
+        </p>
+
+        <!-- Digital Membership Pass Badge -->
+        <div class="digital-pass-card">
+          <div class="pass-card-top">
+            <span class="pass-brand">LEGACY FORGE • PASS</span>
+            <span class="pass-status-pill">
+              <span class="pulse-dot"></span>
+              <span>24/7 ACTIVE</span>
+            </span>
+          </div>
+          <div class="pass-details-row">
+            <span class="pass-label">Athlete Name:</span>
+            <span class="pass-val" id="feedbackMemberName">Marcus Vance</span>
+          </div>
+          <div class="pass-details-row">
+            <span class="pass-label">Membership Tier:</span>
+            <span class="pass-val" id="feedbackMemberTier" style="color: var(--accent-red);">Pro Plan (Most Popular)</span>
+          </div>
+          <div class="pass-details-row">
+            <span class="pass-label">Digital Pass ID:</span>
+            <span class="pass-val" id="feedbackMemberId">#LF-89421</span>
+          </div>
+          <div class="pass-details-row">
+            <span class="pass-label">NFC Key Delivery:</span>
+            <span class="pass-val" id="feedbackMemberEmail" style="color: #4ade80;">Sent to Email</span>
+          </div>
+        </div>
+
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Present your mobile digital pass at any front entrance turnstile for automatic 24/7 entry.
+        </p>
+
+        <button id="modalDoneBtn" class="btn-primary" style="width: 100%;">
+          <span>Access Member Portal</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="section-container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 5v14M18 5v14M2 12h20M6 12H2M22 12h-4"></path>
+              </svg>
+            </div>
+            <div class="logo-text">LEGACY<span>FORGE</span></div>
+          </div>
+          <p>
+            The pinnacle of modern strength culture. Built for those who refuse complacency and seek lifelong physical mastery.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">
+            📍 742 Ironworks Boulevard, Metro District<br>
+            📞 (800) 555-IRON • support@legacyforge.fit
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#equipment">Equipment Showcase</a></li>
+            <li><a href="#routines">Beginner Routines</a></li>
+            <li><a href="#memberships">Membership Tiers</a></li>
+            <li><a href="#register">Digital Access Key</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Facility Hours</h4>
+          <ul class="footer-links" style="font-size: 0.88rem; color: var(--text-secondary);">
+            <li><strong>Members:</strong> 24/7 / 365 Days</li>
+            <li><strong>Staffed Hours:</strong> 6:00 AM - 10:00 PM</li>
+            <li><strong>Recovery Lounge:</strong> 6:00 AM - 11:00 PM</li>
+            <li><strong>Guest Entry:</strong> 8:00 AM - 8:00 PM</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Join The Inner Circle</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Receive exclusive training protocols, nutrition breakdowns, and guest speaker announcements.
+          </p>
+          <form onsubmit="event.preventDefault(); alert('Subscribed to Legacy protocols!');" style="display: flex; gap: 0.5rem;">
+            <input type="email" placeholder="Your email..." class="form-input" style="padding: 0.55rem 0.85rem; font-size: 0.85rem;" required>
+            <button type="submit" class="btn-primary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Legacy Forge Athletics. All rights reserved.</div>
+        <div>Engineered for athletes worldwide. Privacy Policy • Terms of Service</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
